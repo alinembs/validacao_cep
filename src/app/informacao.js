@@ -9,8 +9,6 @@ const Informacao = ({ endereco }) => {
                 <tr>
                     <th scope="col">Bairro</th>
                     <th scope="col">CEP</th>
-                    <th scope="col">Complemento</th>
-                    <th scope="col">IBGE</th>
                     <th scope="col">Localidade</th>
                     <th scope="col">Logradouro</th>
                     <th scope="col">UF</th>
@@ -22,8 +20,6 @@ const Informacao = ({ endereco }) => {
                  
                         <td>{endereco.bairro}</td>
                         <td>{endereco.cep}</td>
-                        <td>{endereco.complemento}</td>
-                        <td>{endereco.ibge}</td>
                         <td>{endereco.localidade}</td>
                         <td>{endereco.logradouro}</td>
                         <td>{endereco.uf}</td>

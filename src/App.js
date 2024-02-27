@@ -5,9 +5,10 @@ import 'bootswatch/dist/pulse/bootstrap.css'
 import 'toastr/build/toastr.css'
 import 'primeicons/primeicons.css'
 import 'primereact/resources/themes/bootstrap4-light-purple/theme.css'
+import '../src/App.css'
 function App() {
   return (
-    <div className="container">
+    <div className="container-md">
       <Rotas />
     </div>
   );

@@ -11,19 +11,23 @@ function ConsultaCep() {
     const [localidade, setlocalidade] = React.useState('')
     const [logradouro, setlogradouro] = React.useState('')
     const [uf, setuf] = React.useState('')
+
     const endereco = {
         cep, bairro, complemento, ibge, localidade, logradouro, uf
     };
     const service = new ApiService();
     const itaqui_bacanga = service.obterListadeBairros();
 
-    const buscar = () => {
+    const Limpar = () => {
         setbairro('');
         setcomplemento('');
         setibge('');
         setlocalidade('')
         setuf('');
         setlogradouro('');
+        setCep('');
+      };
+    const buscar = () => {
         try {
             service.validarcampo(endereco)
         }
@@ -57,18 +61,17 @@ function ConsultaCep() {
 
 
     return (
-        <div className="row  row-cols">
-            <div className="col-md-6 offset-md-3" >
-                <div className="bs-docs-section">
-                    <div className="card md-3">
+        <div className="text-center">
+            <div className="col-lg-6 offset-md-3" >
+
+                    <div className="card xl ">
                         <h3 className="card-header">VALIDCEP do Itaqui-Bacanga</h3>
                         <div className="card-body">
-                            <div className="row">
-                                <div className="col-lg-12">
+                                <div className="row">
                                     <div className="bs-component">
                                         <fieldset>
                                             <div className="form-group">
-                                                <label htmlFor="exampleInputCEP">CEP: *</label>
+                                                <label htmlFor="exampleInputCEP">CEP</label>
                                                 <input type="CEP"
                                                     value={cep}
                                                     onChange={e => setCep(e.target.value)}
@@ -80,25 +83,21 @@ function ConsultaCep() {
                                                     <button onClick={buscar} className="btn btn-info">
                                                         <i className="pi pi-search"></i>Buscar</button>
                                                 </div>
+                                                <div className="col" style={{ margin: '2%' }}>
+                                                    <button onClick={Limpar} className="btn btn-danger">
+                                                        <i className="pi pi-trash"></i>Limpar</button>
+                                                </div>
                                             </div>
-                                        </fieldset>
-
-                                    </div>
-                                    <br />
-                                    <div className="row">
-                                        <div className="col-md-12">
-                                            <div className="bs-component">
-                                                <Informacao
+                                             <br />
+                                               <Informacao
                                                     endereco={endereco}
                                                 />
-                                            </div>
-                                        </div>
-                                    </div>
+                                           
+                                        </fieldset>
+                                    </div>    
                                 </div>
-                            </div>
                         </div>
-                    </div>
-                </div>
+                  </div>
             </div>
         </div>
     )

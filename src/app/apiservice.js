@@ -61,7 +61,7 @@ class ApiService {
             "Alto da Vitoria", "Anjo da Guarda", "Fumacê",
 "Gancharia", "Itaqui", "Vila Verde", "Alto da Esperança","Mauro Fecury I", "Mauro Fecury II", "ResidencialAna Jansen"," São Raimundo", "Tamancão", "Vila Ariri", "Vila Nova", "Vila São Luís", "Vila São Mateus",
 "Jambeiro", "Sa Viana", "Vila Bacanga","Vila Cerâmica", "Vila Dom Luís", "Vila Isabel", "Vila Real", "América do Norte", "Argola e Tambor", "Cidade Nova", "Gapara", "Residencial Paraiso", "Residencial Primavera",
-"Residencial", "Resende", "São Benedito", "Vila da Paz", "Vila Embratel ","Vila Embratel I", "Vila Embratel II", "Vila São João",
+"Residencial", "Resende", "São Benedito", "Vila da Paz", "Vila Embratel","Vila Embratel I", "Vila Embratel II", "Vila São João",
 "Vila São João da Boa Vista", "Vila Zagueiro", "Vila Maranhão", "Taim", "Rio dos Cachorros", "Cajueiro", "Porto Grande", "Vila Conceição"," Vila São Benedito", "Limoeiro", "Parnuaçu", "Jardim São Joaquim" , "Vila Tiradentes" ]
         
     }
